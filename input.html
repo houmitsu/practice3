@@ -1,0 +1,133 @@
+<!-- 一覧画面 -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/master.css" type="text/css">
+	<title>掲示板</title>
+</head>
+<body>
+	<!-- header -->
+	<header>
+		掲示板
+	</header>
+	<form action="./confirm.html" method="post">
+		<table class="inputArticle">
+			<tr>
+				<td class="itemName">名前</td>
+				<td>
+					<input type="text" name="username" value="テスト5">
+				</td>
+			</tr>
+			<tr>
+				<td class="itemName">E-mail</td>
+				<td>
+					<input type="text" name="email" value="">
+				</td>
+			</tr>
+			<tr>
+				<td class="itemName">タイトル</td>
+				<td>
+					<input type="text" name="title" value="テストタイトル５">
+				</td>
+			</tr>
+			<tr>
+				<td class="itemName">本文</td>
+				<td>
+					<textarea name="text" cols="35" rows="5">テスト本文５</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class="itemName">文字色</td>
+				<td>
+					<input class="radio" type="radio" name="color" value="0" id="color_0">
+					<label for="color_0">黒</label>
+					<input class="radio" type="radio" name="color" value="1" id="color_1">
+					<label for="color_1">青</label>
+					<input class="radio" type="radio" name="color" value="2" id="color_2" checked>
+					<label for="color_2">橙</label>
+				</td>
+			</tr>
+		</table>
+		<input class="button" type="reset"	name="clear"	value="クリア">
+		<input class="button" type="submit" name="Submit" value="確認">
+	</form>
+	<hr>
+	<table class="postedArticle" style="color:#000000">
+		<tr>
+			<td class="articleId">4</td>
+			<td class="articleTitle">
+				テストタイトル４
+			</td>
+		</tr>
+		<tr>
+			<td class="articleText" colspan="2">
+				テスト本文４
+			</td>
+		</tr>
+		<tr>
+			<td class="articleDate" colspan="2">
+				2007年 4月 4日 12時00分
+				nobody
+			</td>
+		</tr>
+	</table>
+	<table class="postedArticle" style="color:#ff9900">
+		<tr>
+			<td class="articleId">3</td>
+			<td class="articleTitle">
+				テストタイトル３
+			</td>
+		</tr>
+		<tr>
+			<td class="articleText" colspan="2">
+				テスト本文３
+			</td>
+		</tr>
+		<tr>
+			<td class="articleDate" colspan="2">
+				2007年 4月 2日 15時30分
+				<a href="mailto:test3@test.co.jp">テスト3</a>
+			</td>
+		</tr>
+	</table>
+	<table class="postedArticle" style="color:#0000ff">
+		<tr>
+			<td class="articleId">2</td>
+			<td class="articleTitle">
+				(no title)
+			</td>
+		</tr>
+		<tr>
+			<td class="articleText" colspan="2">
+				テスト本文２
+			</td>
+		</tr>
+		<tr>
+			<td class="articleDate" colspan="2">
+				2007年 4月 2日 10時00分
+				テスト2
+			</td>
+		</tr>
+	</table>
+	<table class="postedArticle" style="color:#000000">
+		<tr>
+			<td class="articleId">1</td>
+			<td class="articleTitle">
+				テストタイトル１
+			</td>
+		</tr>
+		<tr>
+			<td class="articleText" colspan="2">
+				テスト本文１
+			</td>
+		</tr>
+		<tr>
+			<td class="articleDate" colspan="2">
+				2007年 4月 1日 00時00分
+				<a href="mailto:test1@test.co.jp">テスト1</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* header 要素に対するスタイル */
+header {
+	font: bold 20px/25px monospace;
+	margin: 20px 0px 20px 0px;
+}
+
+/*label 要素に対するスタイル */
+label.itemName {
+	display: block;
+	float: left;
+	width: 80px;
+	padding: 5px 0px;
+	font: 10px/15px monospace;
+}
+
+/*p 要素に対するスタイル */
+p {
+	font: 12px/15px monospace;
+}
+
+/* table 要素に対するスタイル */
+table, td {
+	border: 1px #000000 solid;
+}
+
+table.inputArticle, table.postedArticle {
+	width: 400px;
+	margin: 20px 0px 20px 0px;
+}
+
+table td.itemName {
+	width: 150px;
+}
+
+table td.articleId {
+	width: 30px;
+}
+
+table td.articleTitle {
+	width: 370px;
+}
+
+table td.articleText {
+	width: 400px;
+	vertical-align: top;
+}
+
+table td.articleDate {
+	width: 400px;
+	text-align: right;
+}
+
+/* input 要素に対するスタイル */
+input {
+	width: 250px;
+	height: 20px;
+	font: 10px/15px monospace;
+}
+
+input.button {
+	width: 90px;
+	height: 30px;
+	margin: 10px 10px 10px 0px;
+}
+
+input.radio {
+	width: 15px;
+	height: 15px;
+}
+
+textarea {
+	width: 250px;
+	height: 60px;
+	font: 10px/15px monospace;
+}
